@@ -1,26 +1,17 @@
 package com.bridgelab;
 
 public class Contacts {
+    //Variable Declaration for Contacts Class
     private String firstName;
-    private String lastName;
+    private String lastname;
     private String address;
     private String city;
     private String state;
-    private int zip;
-    private long phoneNumber;
-    private String email;
+    private String zip;
+    private String phoneNo;
+    private String emailID;
 
-    public Contacts() {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.zip = zip;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-    }
-
+    //Adding Getter and Setter Methods for the Variables
     public String getFirstName() {
         return firstName;
     }
@@ -29,12 +20,12 @@ public class Contacts {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     public String getAddress() {
@@ -61,40 +52,27 @@ public class Contacts {
         this.state = state;
     }
 
-    public int getZip() {
+    public String getZip() {
         return zip;
     }
 
-    public void setZip(int zip) {
+    public void setZip(String zip) {
         this.zip = zip;
     }
 
-    public long getPhoneNumber() {
-        return phoneNumber;
+    public String getPhoneNo() {
+        return phoneNo;
     }
 
-    public void setPhoneNumber(long phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setPhoneNo(String phoneNo) {
+        this.phoneNo = phoneNo;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmailID() {
+        return emailID;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    @Override
-    public String toString() {
-        return
-                "firstName= " + firstName + '\n' +
-                        "lastName= " + lastName + '\n' +
-                        "address= " + address + '\n' +
-                        "city= " + city + '\n' +
-                        "state= " + state + '\n' +
-                        "zip= " + zip + '\n' +
-                        "phoneNumber= " + phoneNumber + '\n' +
-                        "email= " + email;
+    public void setEmailID(String emailID) {
+        this.emailID = emailID;
     }
 }
